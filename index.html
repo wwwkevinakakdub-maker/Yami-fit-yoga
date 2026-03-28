@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elf Forest Yoga Lounge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">
+          <span class="logo-moon" aria-hidden="true">●</span>
+          Elf Forest Yoga Lounge
+        </div>
+        <div class="nav-links">
+          <a href="#classes">Classes</a>
+          <a href="#flow">Daily Flow</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#guided-video">Guided Video</a>
+          <a href="#community">Community</a>
+        </div>
+        <button class="nav-cta">Join the lounge</button>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Mossy calm, moonlit focus</p>
+          <h1>Stretch into serenity with forest-born yoga rituals.</h1>
+          <p class="hero-subtitle">
+            The Elf Forest Yoga Lounge blends dreamy movement, breathwork, and soft guidance
+            so you can unwind, restore, and glow from within.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Begin the moonlit reset</button>
+            <button class="secondary">Explore forest flows</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>90+</h3>
+              <span>Enchanted sessions</span>
+            </div>
+            <div>
+              <h3>28</h3>
+              <span>Moonlit restores</span>
+            </div>
+            <div>
+              <h3>4.95★</h3>
+              <span>Forest lounge rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Tonight’s focus</h2>
+          <p>Mossy release for hips &amp; lower back</p>
+          <div class="tags">
+            <span>30 min</span>
+            <span>All levels</span>
+            <span>Breath ritual</span>
+          </div>
+          <div class="timer">
+            <div>
+              <p>Forest timer</p>
+              <h3 id="timer-display">05:00</h3>
+            </div>
+            <div class="timer-buttons">
+              <button id="start-timer" class="primary">Begin</button>
+              <button id="pause-timer" class="secondary">Pause</button>
+              <button id="reset-timer" class="ghost">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="classes" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Flows for every forest mood</p>
+            <h2>Choose a ritual that matches your energy.</h2>
+          </div>
+          <button class="ghost">View the forest library</button>
+        </div>
+        <div class="class-grid">
+          <article>
+            <h3>Dawn Dew</h3>
+            <p>Wake up with gentle twists and a steady breath to spark your day.</p>
+            <span>20-25 min • Glow</span>
+          </article>
+          <article>
+            <h3>Sunbeam Reset</h3>
+            <p>Soften shoulders and hips with quick, restorative stretches.</p>
+            <span>15-20 min • Gentle</span>
+          </article>
+          <article>
+            <h3>Moonlit Grove</h3>
+            <p>Settle into bolsters, blankets, and calming breath rituals.</p>
+            <span>30-40 min • Restorative</span>
+          </article>
+          <article>
+            <h3>Forest Balance</h3>
+            <p>Build steadiness with standing sequences and mindful holds.</p>
+            <span>25-35 min • Level 2</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="flow" class="section flow">
+        <div>
+          <p class="eyebrow">Daily grove checklist</p>
+          <h2>Keep your forest ritual consistent.</h2>
+          <p>Check each step as you move through your practice. Your progress resets each day.</p>
+        </div>
+        <div class="flow-card">
+          <h3>Tonight’s ritual</h3>
+          <ul id="flow-list">
+            <li>
+              <label>
+                <input type="checkbox" />
+                3 rounds of moon-breathing (box breath)
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                5 sun salutations with soft knees
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                4 minutes of hip openers on a bolster
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" />
+                3 minutes of forest savasana
+              </label>
+            </li>
+          </ul>
+          <div class="flow-progress">
+            <div class="progress-bar">
+              <div id="progress-fill"></div>
+            </div>
+            <span id="progress-text">0% complete</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section schedule">
+        <div>
+          <p class="eyebrow">Weekly grove schedule</p>
+          <h2>Live classes synced with the forest rhythms.</h2>
+        </div>
+        <div class="schedule-grid">
+          <div>
+            <h4>Monday</h4>
+            <p>Forest Balance</p>
+            <span>6:30 AM • 30 min</span>
+          </div>
+          <div>
+            <h4>Wednesday</h4>
+            <p>Firefly Flow</p>
+            <span>7:00 PM • 40 min</span>
+          </div>
+          <div>
+            <h4>Friday</h4>
+            <p>Moonlit Restore</p>
+            <span>8:00 PM • 35 min</span>
+          </div>
+          <div>
+            <h4>Sunday</h4>
+            <p>Forest Breathwork</p>
+            <span>5:00 PM • 25 min</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="guided-video" class="section guided-video">
+        <div>
+          <p class="eyebrow">10-minute guided video</p>
+          <h2>Flow with Aya Lune, your forest-aligned guide.</h2>
+          <p>
+            Aya is a gentle, detail-focused instructor who cues breath, alignment, and softness. This 10-minute
+            session is designed to reset your energy and leave you grounded for the rest of the day.
+          </p>
+          <ul class="video-details">
+            <li><strong>Duration:</strong> 10:00</li>
+            <li><strong>Focus:</strong> Spine + hip release</li>
+            <li><strong>Level:</strong> All levels welcome</li>
+          </ul>
+          <button class="primary">Play the guided flow</button>
+        </div>
+        <div class="video-card">
+          <div class="video-frame" role="img" aria-label="Preview frame for Aya Lune's guided yoga video">
+            <span class="video-badge">10:00</span>
+            <span class="play-button">▶</span>
+          </div>
+          <div class="video-meta">
+            <h3>Aya Lune · Forest Reset</h3>
+            <p>Slow vinyasa with breath cues and an ending savasana.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="section community">
+        <div class="community-card">
+          <h2>Meet your guides</h2>
+          <p>
+            Our instructors blend mindfulness, alignment, and woodland imagery. Expect options for every body and
+            detailed cues that feel like a private retreat.
+          </p>
+          <div class="instructors">
+            <div>
+              <h4>Elara Moss</h4>
+              <span>Founder • Vinyasa + Meditation</span>
+            </div>
+            <div>
+              <h4>Rina Grove</h4>
+              <span>Restorative + Nervous System Care</span>
+            </div>
+            <div>
+              <h4>Juniper Vale</h4>
+              <span>Strength + Mobility</span>
+            </div>
+          </div>
+        </div>
+        <aside class="testimonial">
+          <p>“The forest imagery makes every practice feel magical. The flows are perfectly paced and the
+          breath cues keep me grounded.”</p>
+          <span>— Lyra M., member since 2022</span>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>Ready to wander the grove?</h3>
+        <p>Download the app and unlock guided yoga, meditation, and moonlit sleep stories.</p>
+      </div>
+      <button class="primary">Get the app</button>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
